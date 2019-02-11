@@ -1,3 +1,7 @@
+html{
+	font-size: 16px;
+}
+
 @font-face{
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
@@ -5,11 +9,19 @@
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+
 .container{
-	max-width: 1200px;
+	max-width: 480px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 h1,
@@ -20,6 +32,60 @@ h4 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
+h1 {
+	font-size: 1.875em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3{
+	font-size: 1.125em;
+}
+
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.3125em;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*desktop styles
+
+.container{
+	max-width: 1200px;
+}
+
 h1 {
 	font-size: 30px;
 }
@@ -39,7 +105,7 @@ p {
     padding: 0 30px;
 }
 
-/*The widths are in a percentage!*/
+/*The widths are in a percentage*/
 header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
@@ -76,11 +142,7 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	clear: both;
-}
+
 
 .main-image {
 	height: auto;
